@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subtitle Translator Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Subtitle Translator</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Upload</a></li>
+        <li><a href="#">Translate</a></li>
+        <li><a href="#">AI Generator</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="dashboard">
+      <h2>Dashboard</h2>
+      <input type="file" id="srtFile" />
+      <select id="languageSelect">
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="si">Sinhala</option>
+      </select>
+      <button onclick="translateSubtitle()">Translate</button>
+      <button onclick="generateSubtitle()">Generate AI Subtitles</button>
+    </section>
+    <pre id="output"></pre>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
